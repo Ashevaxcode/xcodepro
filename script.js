@@ -77,4 +77,3 @@ sliderBlue.addEventListener("input", function () {
   kBiru.innerHTML = `${b}`;
   container.style.backgroundColor = `rgb(${r},${g},${b})`;
 });
-//get slider red
