@@ -26,20 +26,29 @@ for (let i = 0; i < p.length; i++) {
 //tangkap element p4
 const p4 = document.querySelector("section#b p");
 p4.addEventListener("click", function () {
-  const li = document.createElement("li");
-  const tLi = document.createTextNode("item baru ditambahkan");
-  li.append(tLi);
-  const ul = document.querySelector("section#b ul");
-  ul.append(li);
+  // const li = document.createElement("li");
+  // let tLi = document.createTextNode("item baru ditambahkan");
+  // li.append(tLi);
+  // const ul = document.querySelector("section#b ul");
+  // ul.append(li);
 
   let i = 0;
   let liItem = document.querySelectorAll("section#b ul li");
   for (i; i < liItem.length; i++) {
-    // return liItem;
+    //return liItem;
     // return i;
   }
+
+  const li = document.createElement("li");
+  let tLi = document.createTextNode(`item ${i + 1}`);
+  li.append(tLi);
+  const ul = document.querySelector("section#b ul");
+  ul.append(li);
+
   p4.innerHTML = "berhasil tambah item";
-  console.log(`item bertambah ${i - 3} menjadi ${liItem.length}`);
+  console.log(
+    `item bertambah ${i - (liItem.length - i) - 2} menjadi ${liItem.length + 1}`
+  );
 });
 
 //menggunakan event handler jika ada 2 method yang sama maka method baru akan menimpa method yang pertama
