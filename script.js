@@ -61,8 +61,6 @@ sliderRed.addEventListener("input", function () {
   kMerah.innerHTML = `${r}`;
   container.style.backgroundColor = `rgb(${r},${g},${b})`;
   document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
-
-  
 });
 
 sliderGreen.addEventListener("input", function () {
@@ -71,8 +69,7 @@ sliderGreen.addEventListener("input", function () {
   const b = sliderBlue.value;
   kHijau.innerHTML = `${g}`;
   container.style.backgroundColor = `rgb(${r},${g},${b})`;
-    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
-
+  document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 });
 
 sliderBlue.addEventListener("input", function () {
@@ -81,16 +78,16 @@ sliderBlue.addEventListener("input", function () {
   const b = sliderBlue.value;
   kBiru.innerHTML = `${b}`;
   container.style.backgroundColor = `rgb(${r},${g},${b})`;
-    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
-
+  document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 });
 
 //event move
-document.body.addEventListener("pointermove",function(e){
-  const xPos = Math.round((e.clientX / window.innerWidth)*255);
-  const yPos = Math.round((e.clientY /window.innerHeight)*255);
-  document.body.style.backgroundColor = `rgb(${xPos},${yPos},${(xPos+yPos)/2})`;
-  console.log(xPos);
-  console.log(yPos);
-
-})
+document.body.addEventListener("mousemove", function (e) {
+  const xPos = Math.round((e.clientX / window.innerWidth) * 255);
+  const yPos = Math.round((e.clientY / window.innerHeight) * 255);
+  const blue = Math.round((xPos + yPos) / 2);
+  document.body.style.backgroundColor = `rgb(${xPos},${yPos},100)`;
+  // console.log(xPos);
+  // console.log(yPos);
+  console.log(`blue ${blue}`);
+});
