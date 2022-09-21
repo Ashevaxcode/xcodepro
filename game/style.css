@@ -32,8 +32,12 @@ body {
   margin-bottom: 20px;
 }
 
-.box:hover {
+.areaPlayer ul li img:hover {
   cursor: pointer;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  padding: auto;
 }
 
 .areaPlayer ul {
