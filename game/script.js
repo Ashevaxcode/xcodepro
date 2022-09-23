@@ -18,13 +18,6 @@ const areaPlayer = document.querySelectorAll(".areaPlayer ul li");
     
     }
     
-    //tangkap gambar comp
-    const imgComp = document.querySelector(".areaCom img");
-    
-
-for (let i = 0; i < areaPlayer.length; i++)
-  areaPlayer[i].addEventListener("click", function () {
-    
     function getPilihanComp() {
       const pComp = Math.random();
       // console.log(pComp);
@@ -32,9 +25,30 @@ for (let i = 0; i < areaPlayer.length; i++)
       if (pComp >= 0.34 && pComp < 0.68) return "orang";
       return "semut";
     }
+    
+    //tangkap gambar comp
+    const imgComp = document.querySelector(".areaCom img");
+    
+    //tangkap class hasil untuk menampilkan hasil
+    const tampilHasil = document.querySelector(".hasil");
+
+for (let i = 0; i < areaPlayer.length; i++)
+  areaPlayer[i].addEventListener("click", function () {
+    
+    // function getPilihanComp() {
+    //   const pComp = Math.random();
+    //   // console.log(pComp);
+    //   if (pComp < 0.34) return "gajah";
+    //   if (pComp >= 0.34 && pComp < 0.68) return "orang";
+    //   return "semut";
+    // }
 
     const pilCom = getPilihanComp();
+    imgComp.setAttribute("src",`./game/img/${pilCom}.png`);
     const pilPlayer= areaPlayer[i].className;
+    
+    const hasil = getHasil(pilCom,pilPlayer);
+    tampilHasil.innerHTML=`${hasil}`;
     console.log(pilCom);
     console.log(pilPlayer);
     
