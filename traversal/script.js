@@ -1,5 +1,5 @@
-const card = document.querySelectorAll(".card");
-const container = document.getElementsByClassName("container")[0];
+const cards = document.querySelectorAll(".card");
+const container = document.querySelector(".container");
 
 const x = document.querySelectorAll(".close");
 
@@ -18,21 +18,27 @@ const x = document.querySelectorAll(".close");
 //dapat juga menggunakan foreach karena x adalah sebuah node list dan dapat diperlakukan seperti array
 //arrow function
 const nama = document.querySelectorAll(".nama");
-console.log(nama[1].nextElementSibling)
+console.log(nama[1].nextElementSibling);
 
-x.forEach((el) => {
-  el.addEventListener("click", function (e) {
-    e.target.parentElement.style.display = "none";
-    e.preventDefault();
+// x.forEach((el) => {
+//   el.addEventListener("click", function (e) {
+//     e.target.parentElement.style.display = "none";
+//     e.preventDefault();
+//     e.stopPropagation();
+//   });
+// });
 
-  });
-});
+// nama.forEach((el) => {
+//   el.addEventListener("click", function (e) {
+//     e.target.nextElementSibling.style.display = "none";
+//   });
+// });
 
-nama.forEach((el)=>{
-  el.addEventListener("click",function(e){
-    e.target.nextElementSibling.style.display ="none";
-  })
-})
+// cards.forEach((el) => {
+//   el.addEventListener("click", function (e) {
+//     alert("ok");
+//   });
+// });
 
 // nama.forEach((el) => {
 //   el.addEventListener("dbclick", function(e) {
@@ -47,3 +53,10 @@ nama.forEach((el)=>{
 //   });
 // });
 
+// menggunakan event bubling
+container.addEventListener("click", function (e) {
+  if (e.target.className == "close") {
+    e.target.parentElement.style.display = "none";
+    e.preventDefault();
+  }
+});
