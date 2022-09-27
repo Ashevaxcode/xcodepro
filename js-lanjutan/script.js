@@ -50,3 +50,4 @@ function Mhs(nama, energi) {
 
 const saipul = new Mhs("saipul jamil", 40);
 const andre = new Mhs("andre taulani", 50);
+const hani = new Mahasiswa("hanny", 13);
