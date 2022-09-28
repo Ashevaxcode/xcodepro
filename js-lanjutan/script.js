@@ -14,23 +14,30 @@ let mahasiswa = {
 
 //2. function declaration
 const methodMhs = {
-
-  makan: function(porsi) {
+  makan: function (porsi) {
     this.energi += porsi;
+    return `Halo ${this.nama} selamat makan`;
   },
-  
-  main: function(jam){
+
+  main: function (jam) {
     this.energi -= jam;
-  }
-}
+    return `halo ${this.nama} selamat bermain`;
+  },
 
-
+  tidur: function (jam) {
+    this.energi += jam * 2;
+    return this.energi;
+  },
+};
 
 function Mahasiswa(nama, energi) {
-  // let mahasiswa = {};
-  let mahasiswa = object.create(methodMhs);
+  let mahasiswa = Object.create(methodMhs); //menggunakan Object.create()
+  // let mahasiswa = object.create(methodMhs);
   mahasiswa.nama = nama;
   mahasiswa.energi = energi;
+  // mahasiswa.makan = methodMhs.makan;
+  // mahasiswa.main = methodMhs.main;  menggunakan method dari object lain
+
   // mahasiswa.makan = function (porsi) {
   //   this.energi += porsi;
   // };
@@ -66,4 +73,4 @@ const saipul = new Mhs("saipul jamil", 40);
 const andre = new Mhs("andre taulani", 50);
 const hani = new Mahasiswa("hanny", 13);
 
-
+//menggunakan object.create()
