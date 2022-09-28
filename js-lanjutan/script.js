@@ -13,17 +13,31 @@ let mahasiswa = {
 };
 
 //2. function declaration
+const methodMhs = {
+
+  makan: function(porsi) {
+    this.energi += porsi;
+  },
+  
+  main: function(jam){
+    this.energi -= jam;
+  }
+}
+
+
+
 function Mahasiswa(nama, energi) {
-  let mahasiswa = {};
+  // let mahasiswa = {};
+  let mahasiswa = object.create(methodMhs);
   mahasiswa.nama = nama;
   mahasiswa.energi = energi;
-  mahasiswa.makan = function (porsi) {
-    this.energi += porsi;
-  };
+  // mahasiswa.makan = function (porsi) {
+  //   this.energi += porsi;
+  // };
 
-  mahasiswa.main = function (jam) {
-    this.energi -= jam;
-  };
+  // mahasiswa.main = function (jam) {
+  //   this.energi -= jam;
+  // };
   //yang di return adalah let mahasiswa yang ada dalam function declaration
   return mahasiswa;
 }
@@ -51,3 +65,5 @@ function Mhs(nama, energi) {
 const saipul = new Mhs("saipul jamil", 40);
 const andre = new Mhs("andre taulani", 50);
 const hani = new Mahasiswa("hanny", 13);
+
+
