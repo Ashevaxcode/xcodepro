@@ -73,4 +73,7 @@ const saipul = new Mhs("saipul jamil", 40);
 const andre = new Mhs("andre taulani", 50);
 const hani = new Mahasiswa("hanny", 13);
 
+//memanggil object yang menggunakan class
+let angka = [3, 1, 6, 5, 8, 2];
+
 //menggunakan object.create()
