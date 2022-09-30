@@ -40,3 +40,16 @@ class Hero {
 
 let xcodepro = new Hero("xcode", 250);
 let ashevajess = new Hero("ashevajess", 300);
+
+//class inheritance atau pewarisan
+class Knight extends Hero{
+  constructor(nama,power,ability,weapons){
+    super(nama,power);//mengacu pada constructor parentnya Hero
+    //class ini akan memiliki method yg sama seperti hero
+    this.ability = ability;
+    this.weapons = weapons;
+  }
+  
+}
+
+let squall = new Knight("squaljess",300,"lightning crush","lionheart");
