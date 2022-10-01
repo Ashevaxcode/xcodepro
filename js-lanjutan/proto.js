@@ -42,14 +42,38 @@ let xcodepro = new Hero("xcode", 250);
 let ashevajess = new Hero("ashevajess", 300);
 
 //class inheritance atau pewarisan
-class Knight extends Hero{
-  constructor(nama,power,ability,weapons){
-    super(nama,power);//mengacu pada constructor parentnya Hero
+class Knight extends Hero {
+  constructor(nama, power, ability, weapons, attack) {
+    super(nama, power); //mengacu pada constructor parentnya Hero
     //class ini akan memiliki method yg sama seperti hero
     this.ability = ability;
     this.weapons = weapons;
+    this.attack = attack;
   }
-  
+
+  //method
+  serang(hit) {
+    this.attack += hit;
+    return (document.body.innerHTML = `Great ${this.nama} Your hit power is ${this.attack}`);
+  }
 }
 
-let squall = new Knight("squaljess",300,"lightning crush","lionheart");
+let squall = new Knight("squalljess", 300, "lightning crush", "lionheart", 50);
+
+class Warrior extends Knight {
+  constructor(nama, power, ability, weapons, attack, magic, gf) {
+    super(nama, power, ability, weapons, attack);
+    this.magic = magic;
+    this.gf = gf;
+  }
+}
+
+let zell = new Warrior(
+  "zellious",
+  300,
+  "power puch",
+  "glove tiger",
+  80,
+  "darkpunch",
+  "bahamut"
+);
