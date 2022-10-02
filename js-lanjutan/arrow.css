@@ -30,3 +30,11 @@
 #btn-animasi:hover {
   cursor: pointer;
 }
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* .logo {
+  font-size: 12px;
+} */

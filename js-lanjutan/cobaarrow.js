@@ -34,3 +34,16 @@ box.addEventListener("click", function () {
     this.classList.toggle(dua);
   }, 600);
 });
+
+//mengubah size huruf
+const logo = document.querySelector(".logo");
+const change = document.getElementById("change");
+
+logo.addEventListener("click", function () {
+  // let a = 12;
+  for (let i = 8; i < 30; i++) {
+    setInterval(() => {
+      change.style.fontSize = `${i++}px`;
+    }, 50);
+  }
+});
