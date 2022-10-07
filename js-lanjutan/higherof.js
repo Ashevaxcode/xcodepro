@@ -26,3 +26,8 @@ console.log(newAngka2);
 const newAngka3 = angka.map((a) => a * 2);
 
 console.log(newAngka3);
+
+//reduce
+// menjumlah kan seluruh isi array
+const newAngka4 = angka.reduce((accumulator,currentValue)=> accumulator+currentValue);
+console.log(newAngka4);
