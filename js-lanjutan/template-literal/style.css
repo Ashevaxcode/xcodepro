@@ -1,0 +1,21 @@
+.menu {
+  background-color: #ccc;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  display: block;
+  margin: 10px auto;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  background-color: #ccf;
+}

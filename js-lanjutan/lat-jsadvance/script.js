@@ -40,3 +40,20 @@ const totalVideo = videos.filter((video) =>
 jmlVideo.textContent = `${totalVideo.length} video`;
 
 console.log(detik);
+
+//template literal
+//html fragments
+
+const logo = "xcodepro";
+const nama = "asheva";
+const nav = `<div class="navbar">
+  <div class="nav-menu">
+    <h3>Selamat datang ${nama} </h3>
+    <ul>
+      <li><a href="">home</a></li>
+    </ul>
+    <a href="xcodepro.com">${logo}</a>
+  </div>
+</div>`;
+
+document.body.innerHTML = nav;
