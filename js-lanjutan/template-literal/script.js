@@ -72,7 +72,9 @@ const el = `<div class="lagu">
       .join("")}
 </div>`;
 
-const menu = ["home", "contact", "product", "portofolio"];
+//membuat menu
+
+const menu = ["home", "contact","product", "portofolio","sign up"];
 const elMenu = `<div class="menu">
     <ul>
       ${menu
@@ -86,4 +88,8 @@ const elMenu = `<div class="menu">
         
 </div>`;
 
-document.body.innerHTML = elMenu;
+const nav = document.getElementsByTagName("nav");
+nav[0].innerHTML = elMenu;
+
+//membuat isi
+
