@@ -1,9 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
 .menu {
   background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
 }
 
 .menu ul {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .menu ul li {
@@ -25,4 +38,12 @@
 
 .hl {
   background-color: salmon;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.container h2 {
+  margin: 0;
 }
