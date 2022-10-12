@@ -43,7 +43,7 @@ nav {
 .container {
   padding-top: 50px;
 }
-
+/* menghilangkan white space di atas menu */
 .container h2 {
   margin-top: 0;
 }
