@@ -59,9 +59,16 @@ const lagu = [
     judul: "samudera",
     // feat: "dewa19",
   },
+  {
+    penyanyi: "Raisha",
+    judul: "cinta sejati",
+    feat: "afgan",
+  },
 ];
-
+//contoh penggkondisian dalam template literals
+//html fragments
 const el = `<div class="lagu">
+    <h2>Judul Lagu</h2>
     ${lagu
       .map(
         (l) => `<ul>
@@ -70,11 +77,11 @@ const el = `<div class="lagu">
     </ul>`
       )
       .join("")}
-</div>`;
+</div><hr>`;
 
 //membuat menu
 
-const menu = ["home", "contact","product", "portofolio","sign up"];
+const menu = ["home", "contact", "product", "portofolio", "sign up"];
 const elMenu = `<div class="menu">
     <ul>
       ${menu
@@ -92,4 +99,47 @@ const nav = document.getElementsByTagName("nav");
 nav[0].innerHTML = elMenu;
 
 //membuat isi
+const container = document.querySelector(".container");
+const container2 = document.querySelector(".container2");
 
+const Mahasiswa = {
+  nama: "asep supriatna",
+  jurusan: "teknik informatika",
+  umur: 35,
+  matakuliah: [
+    "rekayasa perangkat lunak",
+    "pemrogramman database",
+    "web development",
+    "mobile development programming",
+  ],
+};
+//panggil cetak matakuliah menggunakan function
+function cetakMatakuliah(matakuliah) {
+  return `<ol>
+    ${matakuliah.map((mk) => `<li>${mk}</li>`).join("")}
+  </ol>`;
+}
+
+const content = `<h2>Nama : ${Mahasiswa.nama}</h2>
+<span class="umur">Umur : ${Mahasiswa.umur} tahun</span><br>
+<span class="jurusan">Jurusan : ${Mahasiswa.jurusan}</span><hr>
+<h3>Matakuliah :</h3>
+${cetakMatakuliah(Mahasiswa.matakuliah).toUpperCase()}<hr>`;
+//memanggil function dari luar
+// <ol>
+//   ${Mahasiswa.matakuliah
+//     .map((m) => `<li>${m}</li>`)
+//     .join("")
+//     .toUpperCase()}
+// </ol>
+
+// masukkan kedalam container
+container.innerHTML = content;
+container2.innerHTML = el;
+//footer
+const footer = document.querySelector("footer");
+const footText = `<span class="footer">Copyright&copy ${
+  Mahasiswa.nama
+} , ${Date()}</span>`;
+//
+footer.innerHTML = footText;
