@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spread operator</title>
+    <style>
+      body {
+        background-color: salmon;
+        text-align: center;
+      }
+      .nama {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80px;
+        color: white;
+      }
+
+      .nama span {
+        /* karena span default displaynya adalah inline jadi tidak bisa di terapkan transform */
+        /* maka harus di rubah displaynya menjadi inline-block */
+        transition: 0.3s;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .nama span:hover {
+        transform: scale(2) translateY(-10px);
+      }
+    </style>
   </head>
   <body>
+    <ul>
+      <li>asheva</li>
+      <li>sandhika</li>
+      <li>erik</li>
+      <li>doddy</li>
+    </ul>
+
+    <h1 class="nama">Ashevajess</h1>
     <!-- js -->
     <script src="./script.js"></script>
   </body>
