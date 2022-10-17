@@ -1,0 +1,30 @@
+[
+  {
+    "nama": "ashev",
+    "nrp": "083450442",
+    "email": "asheva@gmail.com",
+    "jurusan": "teknik informatika",
+    "idDosenWali": 1
+  },
+  {
+    "nama": "sandhika",
+    "nrp": "083450425",
+    "email": "sandhika@gmail.com",
+    "jurusan": "teknik jaringan",
+    "idDosenWali": 2
+  },
+  {
+    "nama": "erik",
+    "nrp": "083320440",
+    "email": "erik@gmail.com",
+    "jurusan": "teknik informatika",
+    "idDosenWali": 1
+  },
+  {
+    "nama": "doddy",
+    "nrp": "083450507",
+    "email": "doddy@gmail.com",
+    "jurusan": "teknik grafis",
+    "idDosenWali": 2
+  }
+]
