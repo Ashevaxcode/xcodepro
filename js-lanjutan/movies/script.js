@@ -1,54 +1,58 @@
-$.ajax({
-  url: "http://www.omdbapi.com/?apikey=571aae06&s=harry potter",
+$(".search-button").on("click", function () {
+  $.ajax({
+    url:
+      "http://www.omdbapi.com/?apikey=571aae06&s=" + $(".input-keyword").val(),
 
-  success: (results) => {
-    const movies = results.Search;
-    console.log(movies);
-    // const title = document.querySelector(".card-title");
-    // const year = document.querySelector(".card-subtitle");
-    // const poster = document.querySelector(".card-img-top");
+    success: (results) => {
+      const movies = results.Search;
+      console.log(movies);
+      // const title = document.querySelector(".card-title");
+      // const year = document.querySelector(".card-subtitle");
+      // const poster = document.querySelector(".card-img-top");
 
-    let cards = "";
-    movies.forEach((mv) => {
-      cards += showCards(mv);
+      let cards = "";
+      movies.forEach((mv) => {
+        cards += showCards(mv);
 
-      // title.innerHTML = mv.Title;
-      // year.innerHTML = mv.Year;
-      // poster.setAttribute("src", mv.Poster);
-    });
-    //ini menggunakan cara biasa
-    // const row = document.querySelectorAll(".row")[1];
-    // row.innerHTML = cards;
-
-    //menggunakan jquery untuk memasukkan data ke dalam row
-    //jquery cari element yang memiliki class movie container kemudian isi dengan string cards
-    $(".movie-container").html(cards);
-
-    //ketika tombol modal button di klik
-    $(".modal-detail-button").on("click", function () {
-      // console.log($(this).data("imdbid"));
-      $.ajax({
-        url:
-          "http://www.omdbapi.com/?apikey=571aae06&i=" + $(this).data("imdbid"),
-
-        success: (m) => {
-          const movieDetail = showMovieDetail(m);
-
-          //masukkan ke dalam modal body
-          $(".modal-body").html(movieDetail);
-        },
-
-        error: (e) => {
-          console.log(e.responseText);
-        },
+        // title.innerHTML = mv.Title;
+        // year.innerHTML = mv.Year;
+        // poster.setAttribute("src", mv.Poster);
       });
-    });
-  },
+      //ini menggunakan cara biasa
+      // const row = document.querySelectorAll(".row")[1];
+      // row.innerHTML = cards;
 
-  //jika error
-  error: (e) => {
-    console.log(e.responseText);
-  },
+      //menggunakan jquery untuk memasukkan data ke dalam row
+      //jquery cari element yang memiliki class movie container kemudian isi dengan string cards
+      $(".movie-container").html(cards);
+
+      //ketika tombol modal button di klik
+      $(".modal-detail-button").on("click", function () {
+        // console.log($(this).data("imdbid"));
+        $.ajax({
+          url:
+            "http://www.omdbapi.com/?apikey=571aae06&i=" +
+            $(this).data("imdbid"),
+
+          success: (m) => {
+            const movieDetail = showMovieDetail(m);
+
+            //masukkan ke dalam modal body
+            $(".modal-body").html(movieDetail);
+          },
+
+          error: (e) => {
+            console.log(e.responseText);
+          },
+        });
+      });
+    },
+
+    //jika error
+    error: (e) => {
+      console.log(e.responseText);
+    },
+  });
 });
 
 function showCards(mv) {
