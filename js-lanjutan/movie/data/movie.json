@@ -8,7 +8,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger1.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger1.jpg"
   },
   {
     "Title": "Avengers: Endgame",
@@ -19,7 +19,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger2.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger2.jpg"
   },
   {
     "Title": "Avengers: Infinity War",
@@ -30,7 +30,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger3.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger3.jpg"
   },
   {
     "Title": "Avengers: Age of Ultron",
@@ -41,7 +41,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger4.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger4.jpg"
   },
   {
     "Title": "The Avengers",
@@ -52,7 +52,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger5.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger5.jpg"
   },
   {
     "Title": "The Avengers: Earth's Mightiest Heroes",
@@ -63,7 +63,7 @@
     "Writer": "Joss Whedon, Zak Penn",
     "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
     "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Poster": "./data/img/avenger1.jpg"
+    "Poster": "/js-lanjutan/movie/data/img/avenger1.jpg"
   },
 
   {
@@ -71,6 +71,10 @@
     "Year": "2011",
     "imdbID": "tt1201607",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
   },
   {
@@ -78,6 +82,10 @@
     "Year": "2001",
     "imdbID": "tt0241527",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMzkyZGFlOWQtZjFlMi00N2YwLWE2OWQtYTgxY2NkNmM1NjMwXkEyXkFqcGdeQXVyNjY1NTM1MzA@._V1_SX300.jpg"
   },
   {
@@ -85,6 +93,10 @@
     "Year": "2002",
     "imdbID": "tt0295297",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_SX300.jpg"
   },
   {
@@ -92,6 +104,10 @@
     "Year": "2004",
     "imdbID": "tt0304141",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"
   },
   {
@@ -99,6 +115,10 @@
     "Year": "2005",
     "imdbID": "tt0330373",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg"
   },
   {
@@ -106,6 +126,10 @@
     "Year": "2007",
     "imdbID": "tt0373889",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTM0NTczMTUzOV5BMl5BanBnXkFtZTYwMzIxNTg3._V1_SX300.jpg"
   },
   {
@@ -113,6 +137,10 @@
     "Year": "2010",
     "imdbID": "tt0926084",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg"
   },
   {
@@ -120,6 +148,10 @@
     "Year": "2009",
     "imdbID": "tt0417741",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg"
   },
   {
@@ -127,6 +159,10 @@
     "Year": "2022",
     "imdbID": "tt16116174",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BNTZkNWEyZTgtYzJlOS00OWNiLTgwZjMtZGU5NTRhNDNjOTRhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_SX300.jpg"
   },
   {
@@ -134,6 +170,10 @@
     "Year": "2010",
     "imdbID": "tt1756545",
     "Type": "movie",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Zak Penn",
+    "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BNDM0YzMyNGUtMTU1Yy00OTE2LWE5NzYtZDZhMTBmN2RkNjg3XkEyXkFqcGdeQXVyMzU5NjU1MDA@._V1_SX300.jpg"
   }
 ]

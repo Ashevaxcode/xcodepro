@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h1>XcodePro Movies</h1>
+          <button
+            type="button"
+            class="btn btn-default btn-primary container-fluid my-2"
+          >
+            acivate
+          </button>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control input-keyword"
+              placeholder="Search movie.."
+            />
+            <button
+              class="btn btn-primary search-button"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end search -->
+
+      <!-- cards -->
+      <div class="row movie-container"></div>
+      <!-- cards -->
+    </div>
+    <!-- awal modal box -->
+    <div
+      class="modal fade"
+      id="movieDetailModal"
+      tabindex="-1"
+      aria-labelledby="movieDetailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="movieDetailModalLabel">
+              Description :
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir modal box -->
+
+    <!-- js -->
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
