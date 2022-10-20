@@ -1,7 +1,7 @@
 const searchButton = document.querySelector(".search-button");
 
 searchButton.addEventListener("click", function () {
-  fetch("../movie/data/movie.jon")
+  fetch("../movie/data/movie.json")
     .then((response) => {
       if (response.ok) {
         return response.json();
